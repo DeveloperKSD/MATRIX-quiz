@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python | Matrix Challenge</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- SweetAlert CSS/JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <a href="index.html" class="nav-button">🏠 Home</a>
+            <span class="question-number">Question 1/15</span>
+            <a href="#" class="nav-button" id="back-button">← Back</a>
+        </div>
+
+        <!-- Question -->
+        <div class="question-container">
+            <div class="language-tag">🐍 Python</div>
+            <div class="code-snippet">
+                <pre>def greet():
+    print("Hello, Matrix!")</pre>
+            </div>
+            <div class="problem-text">What is the output of this code?</div>
+        </div>
+
+        <!-- Answer Input -->
+        <div class="answer-container">
+            <input type="text" id="user-answer" placeholder="Your answer...">
+            <button id="submit-button">Submit</button>
+        </div>
+    </div>
+
+    <script src="python.js"></script>
+</body>
+</html>

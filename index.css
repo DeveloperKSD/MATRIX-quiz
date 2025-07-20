@@ -1,0 +1,187 @@
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Title */
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #800080; /* Purple */
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.7);
+    margin-bottom: 50px;
+}
+
+/* Language Grid */
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Language Cards */
+.language-card {
+    background-color: #121212;
+    border: 2px solid #800080;
+    border-radius: 10px;
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.language-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #800080;
+    background-color: #1a1a1a;
+}
+
+/* Icons */
+.icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Language Names */
+.language-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .language-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add this to your existing CSS */
+.logo {
+    width: 500x; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 2px;
+    filter: drop-shadow(0 0 10px rgba(128, 0, 128, 0.7)); /* Optional: Purple glow */
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+/* Existing styles... */
+
+
+
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 1px solid #800080;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: 1px solid #800080;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #800080;
+}
+
+.question-number {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+/* Question Container */
+.question-container {
+    background-color: #121212;
+    border: 2px solid #800080;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.language-tag {
+    font-family: 'Press Start 2P', cursive;
+    color: #800080;
+    margin-bottom: 10px;
+}
+
+.code-snippet {
+    background-color: #1E1E1E;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow-x: auto;
+}
+
+.code-snippet pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+
+.problem-text {
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Answer Container */
+.answer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#user-answer {
+    padding: 10px;
+    background-color: #121212;
+    border: 2px solid #800080;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    background-color: #800080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #9a009a;
+    transform: scale(1.05);
+}
